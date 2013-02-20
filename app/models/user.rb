@@ -12,7 +12,12 @@ class User < ActiveRecord::Base
   # validates our inputs for our tests
   validates :first_name, presence: true
   validates :last_name, presence: true
-  validates :profile_name, presence: true
+  validates :profile_name, presence: true,
+                           uniqueness: true,
+                           format: {
+                             with: /\A[a-z0-9_-]+\Z/,
+                            message: 'must be formatted correctly.'
+                           }
 
   has_many :statuses
 
