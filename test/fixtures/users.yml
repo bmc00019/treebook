@@ -3,3 +3,9 @@ bobby:
   last_name: "Cummings"
   profile_name: "bmc00019"
   email: "bmc00019@gmail.com"
+
+john:
+    first_name: "John"
+    last_name: "Doe"
+    profile_name: "johndoe"
+    email: "john@doe.com"
